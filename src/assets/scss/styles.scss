@@ -1,0 +1,80 @@
+@mixin band-grid-container {
+    display: grid;
+    grid-gap: 2px;
+    height: 100px;
+}
+
+.band-grid-thursday {
+    @include band-grid-container;
+    padding: 15% 10% 0 10%;
+}
+
+.band-grid-friday {
+    @include band-grid-container;
+    padding: 10px 30px 0 50px;
+}
+
+.band-grid-saturday {
+    @include band-grid-container;
+    padding: 10px 40px 0 60px;
+}
+
+.headliners-one {
+    grid-template-columns: 1fr;
+}
+// .headliners-one div:hover {
+//     border: solid #C67D0E 1px;
+// }
+
+.headliners-two {
+    grid-template-columns: 1fr 1fr;
+}
+// .headliners-two div:hover {
+//     border: solid #C67D0E 1px;
+// }
+
+.sub-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 2px;
+    height: 20%;
+}
+
+.sub-grid-four {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 2px;
+    height: 20%;
+}
+
+.sub-grid div:hover {
+    border: solid #C67D0E 1px;
+}
+
+.sub-grid-four div:hover {
+    border: solid #C67D0E 1px;
+}
+
+.band-grid-wednesday {
+    display: flex;
+}
+
+.band-grid-wednesday div:hover {
+    border: solid #C67D0E 1px;
+}
+
+body.download-poster-bg {
+  background-color:#1f2832;
+}
+
+body.beardedtheory-poster-bg {
+  background-color: #FAEFE2;
+}
+
+.smallest-band-logo { transform: scale(0.7); }
+.smaller-band-logo  { transform: scale(0.8); }
+.small-band-logo    { transform: scale(0.9); }
+.normal-band-logo   { transform: scale(1); }
+.large-band-logo    { transform: scale(1.1); }
+.larger-band-logo   { transform: scale(1.2); }
+.largest-band-logo  { transform: scale(1.3); }
